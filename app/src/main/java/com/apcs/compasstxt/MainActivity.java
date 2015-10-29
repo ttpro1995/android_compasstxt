@@ -139,6 +139,7 @@ public class MainActivity extends AppCompatActivity  implements SensorEventListe
         protected Void doInBackground(Void... params) {
             try{
             while (MODE == LOGGING_MODE){
+            c = Calendar.getInstance();
             Date date = c.getTime();
             SimpleDateFormat df = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
             float degree = CompassData.degree;
